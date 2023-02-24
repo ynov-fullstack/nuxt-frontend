@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "@nuxtjs/apollo": "^5.0.0-alpha.5",
+        "nuxt": "^3.2.2"
+    },
+    "dependencies": {
+        "sass": "^1.58.3",
+        "vue": "^3.2.47"
+    }
+}

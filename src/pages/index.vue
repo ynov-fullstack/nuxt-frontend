@@ -2,14 +2,12 @@
   <p>Test homepage</p>
 </template>
 
-<script>
+<script setup>
+
 definePageMeta({
   layout: "blog"
 });
 
-export default {
-
-}
 </script>
 
 <style>

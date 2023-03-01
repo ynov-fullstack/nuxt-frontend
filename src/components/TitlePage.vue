@@ -1,13 +1,10 @@
 <template>
-  <p>test</p>
+  <h1>{{title}}</h1>
 </template>
 
 <script>
-definePageMeta({
-  layout: "blog"
-});
-
 export default {
+  props:["title"]
 }
 </script>
 

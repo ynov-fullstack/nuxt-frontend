@@ -1,15 +1,10 @@
 <template>
-  <footer>
-    <p>This is a footer</p>
+  <footer className="footer__main">
   </footer>
 </template>
 
-<script>
-export default {
-
+<style lang="scss">
+.footer__main {
+  background: black;
 }
-</script>
-
-<style>
-
 </style>

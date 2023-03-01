@@ -1,6 +1,6 @@
 <template>
   <div class="post__grid">
-    <template v-for="item in posts.posts.data" >
+    <template v-for="item in posts && posts.posts.data">
       <PostItem :post="item"/>
     </template>
   </div>
@@ -18,5 +18,7 @@ export default {
 <style>
 .post__grid {
   display: flex;
+  flex-wrap: wrap;
+  gap:20px;
 }
 </style>

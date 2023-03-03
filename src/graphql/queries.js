@@ -22,10 +22,15 @@ export const GET_POSTS = gql`
 
 export const HEADER_MENU = gql`
   query headerMenu {
-    headerMenu{
-      data {
-        attributes {
-          menu
+    query {
+      headerMenu{
+        data{
+          attributes{
+            item{
+              name,
+              link
+            }
+          }
         }
       }
     }
@@ -40,6 +45,15 @@ export const GET_POST = gql`
         attributes{
             title
             description
+            builder{
+  		        ...on ComponentBuilderTextEditor {
+    		        wysiwyg
+                with_background
+              }
+              ...on ComponentBuilderTextEmphasis {
+    		        text
+  		        }
+            }
             categories {
               data {
                 id

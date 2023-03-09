@@ -4,7 +4,7 @@
 
     <TitlePage :title="data && data.post.data.attributes.title"/>
     <div :v-if="data.post.data.attributes.builder">
-      <div v-for="(item, index) in data.post.data.attributes.builder" :key="index">
+      <div v-for="(item, index) in data && data.post.data.attributes.builder" :key="index">
         <div :v-if="`${item.__typename='ComponentBuilderTextEmphasis'}`">
           <p>{{item.text}}</p>
         </div>

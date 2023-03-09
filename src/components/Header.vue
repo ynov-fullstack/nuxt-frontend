@@ -5,7 +5,7 @@
     </NuxtLink>
     <div class="header__menu">
       <nav class="header__nav">
-        <ul class="nav__list" v-for="(menu, index) in data && data.headerMenu.data.attributes.menu" :key="index">
+        <ul class="nav__list" v-for="(menu, index) in data && data.headerMenu.data.attributes.item" :key="index">
           <li class="nav__item">
             <NuxtLink :to="`${menu.link}`">
               {{menu.name}}
@@ -23,7 +23,7 @@ import logo from "../assets/img/logo.png";
 import { HEADER_MENU } from "../graphql/queries";
 
 const { data } = useAsyncQuery(HEADER_MENU);
-
+console.log(data);
 </script>
 
 <style lang="scss">

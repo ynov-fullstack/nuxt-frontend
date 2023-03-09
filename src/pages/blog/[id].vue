@@ -10,7 +10,7 @@
         </div>
         <div 
         :v-if="`${item.__typename='ComponentBuilderTextEditor'}`"
-        :class="`${item.with_background ? 'background' : ''}`"
+        :class="`${item.with_background && 'background'}`"
         >
           <div>{{item.wysiwyg}}</div>
         </div>

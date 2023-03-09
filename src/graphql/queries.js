@@ -21,17 +21,14 @@ export const GET_POSTS = gql`
 `
 
 export const HEADER_MENU = gql`
-  query headerMenu {
-    query {
-      headerMenu{
-        data{
-          attributes{
-            item{
-              name,
-              link
-            }
+  query headerMenu{
+    headerMenu{
+      data{
+        attributes{
+          item{
+            name,
+            link }
           }
-        }
       }
     }
   }

@@ -1,12 +1,12 @@
 <template>
   <header className="header__main">
     <NuxtLink to="/">
-      <img :src="logo" alt="Airbnb"/>
+      <img src="https://ynov-globalressources.s3.eu-west-3.amazonaws.com/logo.webp" alt="Airbnb"/>
     </NuxtLink>
     <div class="header__menu">
       <nav class="header__nav">
-        <ul class="nav__list" v-for="(menu, index) in data && data.headerMenu.data.attributes.item" :key="index">
-          <li class="nav__item">
+        <ul class="nav__list">
+          <li class="nav__item" v-for="(menu, index) in data && data.headerMenu.data.attributes.item" :key="index">
             <NuxtLink :to="`${menu.link}`">
               {{menu.name}}
             </NuxtLink>
